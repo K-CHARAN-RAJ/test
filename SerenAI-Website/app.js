@@ -4,7 +4,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
-            target.scrollIntoView({
+            target.scrollIntoView({  // kattacharanraj
                 behavior: 'smooth',
                 block: 'start'
             });
@@ -74,7 +74,7 @@ const getStartedButtons = [
 function openModal() {
     modal.classList.add('active');
     document.body.style.overflow = 'hidden';
-}
+} // kattacharanraj
 
 // Close modal
 function closeModal() {
@@ -104,7 +104,7 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'Escape' && modal.classList.contains('active')) {
         closeModal();
     }
-});
+}); // kattacharanraj
 
 // Handle signup form submission
 const signupForm = document.querySelector('.signup-form');
@@ -174,7 +174,7 @@ if (logo) {
         window.scrollTo({
             top: 0,
             behavior: 'smooth'
-        });
+        }); // kattacharanraj
     });
 }
 
